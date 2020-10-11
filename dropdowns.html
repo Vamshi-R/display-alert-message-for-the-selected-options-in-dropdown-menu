@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function func(){
+            var select = document.getElementById("selectbox")
+            //select the options based on the select index
+            //use only select as a variable for dropdowns
+            alert(select.options[select.selectedIndex].value)
+            //if you hard-code index value,then it will display that particular index when you select different option also.
+            /*alert(select.options[0].value)//here 0 is hard-coded index value*/
+        }
+    </script>
+</head>
+<body>
+    <select id = "selectbox">
+        <option value = "html">html</option>
+        <option value = "css">css</option>
+        <option value = "js">js</option>
+        <option value = "jQuery">html</option>
+        <option value = "ajax">ajax</option>
+    </select><br>
+    <button id = "btn1" onclick="func()">click</button>
+
+</body>
+</html>
